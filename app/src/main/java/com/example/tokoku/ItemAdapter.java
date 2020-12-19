@@ -147,7 +147,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
                 String tahun    = editTahun.getText().toString().trim();
 
                 if (!nama.isEmpty() && !jumlah.isEmpty() && !harga.isEmpty() && !hari.isEmpty() && !bulan.isEmpty() && !tahun.isEmpty()) {
-                    String data = "UPDATE Item SET nama = ?, jumlah = ?, harga = ?, satuan = ?, hari = ?, bulan = ?, tahun = ? WHERE id = ? ";
+                    String data = "UPDATE Item SET nama = ?, jumlah = ?, harga = ?, hari = ?, bulan = ?, tahun = ? WHERE id = ? ";
 
                     mDatabase.execSQL(data, new String[]{nama, jumlah, harga , hari, bulan, tahun, String.valueOf(item.getId())});
                     Toast.makeText(context, "Barang telah diupdate!", Toast.LENGTH_SHORT).show();

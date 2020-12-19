@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tokoku</string>
+
+    <string-array name="satuan">
+        <item>kilo</item>
+        <item>pcs</item>
+        <item>box</item>
+    </string-array>
+</resources>

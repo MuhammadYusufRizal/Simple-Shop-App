@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/TopBar"
+    tools:context=".InsertItem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Data"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtKode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/editText"
+        android:hint="Kode Barang"
+        android:padding="12dp"
+        android:paddingLeft="8dp"
+        />
+
+    <EditText
+        android:id="@+id/edtNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/editText"
+        android:hint="Nama Barang"
+        android:padding="12dp"
+        android:paddingLeft="8dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:padding="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satuan"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            />
+        <Spinner
+            android:id="@+id/edtSatuanSpinner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/editText"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtJumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/editText"
+        android:hint="Jumlah Barang"
+        android:padding="12dp"
+        android:paddingLeft="8dp"
+        />
+
+
+    <EditText
+        android:id="@+id/edtHarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/editText"
+        android:hint="Harga Barang"
+        android:padding="12dp"
+        android:paddingLeft="8dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:padding="12dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Expired"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            />
+        <EditText
+            android:id="@+id/edtHari"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:background="@color/editText"
+            android:hint="DD"
+            android:padding="12dp"
+            android:paddingLeft="8dp"
+            />
+        <EditText
+            android:id="@+id/edtBulan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/editText"
+            android:hint="MM"
+            android:padding="12dp"
+            android:paddingLeft="8dp"
+            />
+        <EditText
+            android:id="@+id/edtTahun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/editText"
+            android:hint="YYYY"
+            android:padding="12dp"
+            android:paddingLeft="8dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="Submit"
+            />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="Reset"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/edtSatuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Satuan"
+        android:padding="12dp"
+        android:paddingLeft="8dp"
+        android:textSize="0dp"
+        />
+
+</LinearLayout>
